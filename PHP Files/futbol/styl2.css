@@ -1,0 +1,54 @@
+body{
+    font-family: Verdana;
+    background-color: seagreen;
+}
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header{
+    color:  white;
+    text-align: center;
+    height: 330px;
+}
+.team-info{
+    color: white;
+    text-align: center;
+    width: 170px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.team-info:hover{
+    background-color: white;
+    color: black;
+}
+#bottom-title{
+    color: white;
+}
+#bottom-clubs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form-block{
+    display: flex;
+}
+#left, #right{
+    background-color: whitesmoke;
+    height: 150px;
+}
+#left{
+    width: 30%;
+    text-align: center;
+}
+#right{
+    width: 70%;
+}
+h3{
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}

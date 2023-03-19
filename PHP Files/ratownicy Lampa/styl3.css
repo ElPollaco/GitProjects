@@ -1,0 +1,43 @@
+body{
+    font-family: Arial;
+}
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+header, footer{
+    display: flex;
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+}
+#head-left, #foot-left{
+    width: 55%;
+    font-size: 120%;
+}
+#head-mid, #foot-mid{
+    width: 25%;
+}
+#head-right, #foot-right{
+    width: 20%;
+    text-align: right;
+}
+#main-sec{
+    background-color: snow;
+    padding: 70px;
+}
+label{
+    display: block;
+}
+a{
+    border: dotted 2px saddlebrown;
+    background-color: snow;
+    padding: 20px;
+    line-height: 100px;
+}
+ol{
+    list-style-type: lower-latin;
+}

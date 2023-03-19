@@ -1,0 +1,131 @@
+:root{
+    --header-height: 150px;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+header{
+    margin: 0px;
+    background-color: black;
+    color: red;
+    text-shadow: 2px 2px blue, 3px 3px 15px yellow;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 23px;
+}
+h1{
+    margin: 0px;
+}
+#header-image{
+    width: auto;
+    height: auto;
+    padding: 45px;
+}
+.image{
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+nav{
+    height: calc(60vh - var(--header-height));
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.produkty{
+    padding: 0 50px 0 50px;
+    margin: 0 25px 0 25px;
+    border: 3px double red;
+    border-radius: 25%;
+    background-color: rgba(255, 0, 0, 0.244);
+}
+.produkty > p{
+    font-size: 23px;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+}
+#image-ram{
+    margin-top: 30%;
+}
+#checkbox-menu{
+    margin: 40px 0 40px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.ukryty{
+    display: none;
+}
+input[type="number"]{
+    margin-left: 15px;
+    width: 200px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.244);
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px black;
+    color: white;
+    font-size: 18px;
+}
+input[type="number"]:hover{
+    background-color: rgba(255, 255, 0, 0.8);
+    color: black;
+}
+button{
+    margin-bottom: 60px;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.244);
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px black;
+    color: white;
+    font-size: 18px;
+}
+button:hover{
+    background-color: rgba(255, 255, 0, 0.8);
+    color: black;
+}
+h3{
+    color: rgba(255, 255, 0, 0.8);
+    letter-spacing: 0.7px;
+}
+#wynik > #wynik-main, #wynik > table{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+}
+#wynik > table{
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+th{
+    border: 3px solid red;
+}
+td{
+    border: 3px solid red;
+    padding: 10px 50px 10px 50px;
+}
+#wynik > p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}

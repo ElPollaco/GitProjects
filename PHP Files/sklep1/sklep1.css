@@ -1,0 +1,107 @@
+body{
+    text-align: center;
+    background-color: rgb(205, 84, 75);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.oferty{
+    float: left;
+    width: 12%;
+    height: 200px;
+    padding: 50px 34px 50px 34px;
+    margin: 0px 10px 30px 10px;
+    border-radius: 120px;
+    color: black;
+    font-weight: 700;
+}
+.oferty > p{
+    font-size: 18px;
+}
+.oferty:first-child{
+    background-color: rgb(115, 87, 72);
+}
+#R2{
+    background-color: rgb(198, 198, 198);
+}
+#R3{
+    background-color: rgb(219, 181, 65);
+}
+#R4{
+    background-color: rgb(138, 18, 20);
+}
+#R5{
+    background-color: rgb(25, 165, 11);
+}
+.oferty:last-child{
+    background-color: rgb(183, 255, 248);
+}
+#left{
+    width: 48%;
+    float: left;
+    text-align: right;
+}
+#under1{
+    margin-top: 60px;
+}
+#right{
+    width: 52%;
+    float: left;
+    text-align: left;
+}
+input, select{
+    background-color: rgb(212, 212, 212);
+    border: none;
+    box-shadow: 2px 2px black;
+    margin-left: 10px;
+    background-color: white;
+    color: rgb(205, 84, 75);
+}
+input[type=text], input[type=email], input[type=password]{
+    margin-left: 10px;
+    outline: none;
+}
+input[type=email], input[type=password]{
+    margin-top: 18px;
+}
+input[type=text]:first-child{
+    margin-top: 18px;
+}
+#select1{
+    margin-top: 62px;
+}
+select{
+    margin-top: 18px;
+    outline: none;
+}
+input:hover, select:hover{
+    background-color: rgb(252, 156, 156);
+    color: white;
+}
+option{
+    background-color: rgb(252, 156, 156);
+    color: white;
+}
+input[type=checkbox]{
+    margin-top: 12px;
+    margin-right: 18px;
+}
+input[type=submit]{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 100px;
+}
+#bottom{
+    padding-top: 30px;
+    clear: both;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+footer{
+    clear: both;
+}
+h3{
+    letter-spacing: 0.9px;
+}

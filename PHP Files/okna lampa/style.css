@@ -1,0 +1,91 @@
+body{
+    background-color: bisque;
+    font-family: Helvetica;
+    font-size: 85%;
+}
+#container{
+    position: relative;
+}
+header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(53, 65, 65);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+h1{
+    font-size: 400%;
+    color: #ededed;
+    font-style: oblique;
+}
+h2{
+    font-size: 200%;
+    color: #ededed;
+    font-style: oblique;
+}
+section{
+    margin-top: 7%;
+}
+#left{
+    background-color: bisque;
+    width: 25%;
+    padding: 2.5%;
+    height: auto;
+    float: left;
+}
+#wynik{
+    background-color: bisque;
+    width: 95%;
+    padding: 2.5%;
+    height: auto;
+    float: left;
+}
+#right{
+    background-color: rgb(238, 162, 69);
+    width: calc(65% - 4px);
+    padding: 2.5%;
+    height: auto;
+    float: right;
+    border: 2px solid black;
+}
+input, select{
+    margin-bottom: 20px;
+}
+input[type="number"]{
+    background-color: chocolate;
+    outline: none;
+    border: 2px solid black;
+    color: #efefef;
+}
+input[type="button"], input[type="submit"]{
+    background-color: tan;
+    border: 2px solid chocolate;
+    color: black;
+}
+input, select{
+    background-color: brown;
+    outline: none;
+    border: 1px solid #ededed;
+    margin-right: 10px;
+    color: #ededed;
+}
+input[type="number"]:hover{
+    background-color: rgb(255, 152, 78);
+}
+#left > form > input[type="number"]{
+    display: inline-block;
+    margin-left: 15px;
+}
+footer{
+    clear: both;
+    background-color: dimgray;
+    padding: 5px;
+    text-align: center;
+    width: 99.5%;
+}
+p{
+    font-size: 100%;
+    color: #ededed;
+}
