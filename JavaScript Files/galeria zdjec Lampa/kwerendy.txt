@@ -1,4 +1,0 @@
-1. SELECT przyloty.kierunek, przyloty.czas FROM przyloty WHERE przyloty.status_lotu = 0;
-2. SELECT odloty.kierunek, odloty.dzien FROM odloty JOIN samoloty ON samoloty.id = odloty.samoloty_id WHERE samoloty.typ = "Boening 787";
-3. SELECT przyloty.nr_rejsu, przyloty.kierunek FROM przyloty WHERE przyloty.nr_rejsu LIKE "LX%";
-4. UPDATE samoloty SET samoloty.linie = "SWISS2" WHERE samoloty.linie = "SWISS";

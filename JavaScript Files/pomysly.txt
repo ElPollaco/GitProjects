@@ -1,5 +1,0 @@
-kapitały
-zegar światowy
-timer czasowy
-stoper
-barwny analizator obrazów
