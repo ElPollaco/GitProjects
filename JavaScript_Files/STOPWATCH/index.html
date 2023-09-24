@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet"> <!--MANROPE FONT NOTE-->
+    </head>
+    <body>
+        <!--BOX - START-->
+        <div id="box">
+            <header>
+                <h1><i>STOPWATCH</i> (ver. 1.0)</h1>
+            </header>
+            <!--CONTAINER OF TOOLS USED TO MEASURE TIME - START-->
+            <section id="container">
+                <div id="currentTime">
+                    <h1>Current Time</h1>
+                    <h3 id="stopwatchCurrent">00:00:00.000</h3>
+                </div>
+                <div id="totalTime">
+                    <h1>Total Time</h1>
+                    <h3 id="stopwatchTotal">00:00:00.000</h3>
+                </div>
+                <div id="buttons">
+                    <button id="startStopButton">Start Stopwatch</button>
+                    <button id="resetButton">Reset Stopwatch</button>
+                    <button id="addMeasurementButton">Add Stopwatch Measurement</button>
+                </div>
+                <div id="timeListBlock">
+                    <h1>Time List</h1>
+                    <h3 id="error"></h3>
+                    <ol id="timeList">
+                        
+                    </ol>
+                </div>
+                <div id="bestTime">
+                    <h1>Shortest Time Recorded</h1>
+                    <h3 id="bestRecordedTime">No time recorded.</h3>
+                </div>
+                <!--CONTAINER OF TOOLS USED TO MEASURE TIME - END-->
+            </section>
+            <!--INSTRUCTION - START-->
+            <section id="desc">
+                <h4>About the <i>STOPWATCH</i></h4><br>
+                <p><i>STOPWATCH</i> serves as the tool to measure time in various contidions and environments. There are several unique to the application tools that might help you when using it.</p>
+                <p><span class="tool">Current Time</span> - represents the currently measured time. It can be stopped, reseted, and inserted to Time List.</p>
+                <p><span class="tool">Total Time</span> - represents the measured time by total including the latest measured time and the previous ones. Unlike Current Time, it cannot be affected either by resetting or inserting processes.</p>
+                <p><span class="tool">Buttons</span> - are localized on the right top corner of the panel. Each has a different function:</p>
+                <ul>
+                    <li><span class="tool">Start Stopwatch/Stop Stopwatch</span> - are responsible for initiation and halt of the stopwatch, affecting both Current Time and Total Time. Clicking the button when Start Stopwatch is ready starts the Times and switches the button text to Stop Stopwatch. Doing the opposite stops the Times and returns the button text back to Start Stopwatch.</li>
+                    <li><span class="tool">Reset Stopwatch</span> - is responsible for reset of Current Time stopwatch. When clicked, it resets the time back to '00:00:00:000' value and automatically starts the new measurement. Total Time is not affected by this button.</li>
+                    <li><span class="tool">Add Stopwatch Measurement</span> - is responsible for inserting the measurement from Current Time. When clicked, it copies the measurement for Current Time and places into Time List followed by committing Reset Stopwatch function. If the button is used when a timer has value equal '00:00:00:00', a respective error will appear. Some extra actions might occur in Time List and Shortest Time Recorded blocks if meet their requirements.</li>
+                </ul>
+                <p><span class="tool">Time List</span> - shows all collected time measurements placed using the Add Stopwatch Measurement button in order from oldest to newest. It has a capacity of 100 measurements and must not exceed this; otherwise a corresponding error will appear. Some displayed measurements also appear with different backgrounds when they belong to the 3 shortest of the current Time List measurements, where the shortest has a gold background, the second shortest has a silver background and the third shortest has a brown background. The Top 3 is intended to collate the 3 shortest measurements , however, if 2 or more measurements have reached an identical time, then they are given an equal position and the position(s) below are ignored.</p>
+                <p><span class="tool">Shortest Time Recorded</span> - shows the currently shortest time measurement recorded.</p><br>
+                <p id="warning">WARNING: All data in the application is temporary and leaving the application will delete all stored data. Deleting data can also be done by refreshing the page using the refresh button in the browser or by pressing F5 on the keyboard.</p><br>
+                <p style="text-align: center;">If you have read the manual, then you can feely use the application. Have fun!</p>
+            </section>
+            <!--INSTRUCTION - END-->
+            <footer>
+                <p><i>STOPWATCH</i> (ver. 1.0) - made by ElPollaco &copy; 2023 - All Rights Registered</p>
+            </footer>
+        </div>
+        <!--BOX - END-->
+    </body>
+    <script src="script.js"></script>
+</html>

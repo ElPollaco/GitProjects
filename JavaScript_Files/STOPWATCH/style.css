@@ -1,0 +1,149 @@
+/* 
+    THE CSS FILE FOR STOPWATCH APPLICATION
+    AUTHOR: ELPOLLACO
+    
+    THE COMMENTS IN THE FILE DESCRIBE AND GROUP ALL STYLE STRUCTURES OF THE APPLICATION
+*/
+
+/* STRUCTURE FOR ALL ELEMENTS OF THE TIMER */
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: rgba(46, 87, 71, 0.7);
+    text-align: center;
+}
+/* STRUCTURE OF THE CONTAINERS NAMED AND UNNAMED */
+#box{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#container, header, section, footer, div{
+    width: auto;
+    max-height: 100%;
+}
+header, footer{
+    background-color: rgb(32, 41, 41);
+    padding: 1px 0;
+}
+FOOTER{
+    word-spacing: 3px;
+}
+section{
+    margin: 0 auto;
+}
+#container{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 25px;
+    background-color: rgb(32, 88, 88);
+    margin: auto;
+    padding: 8px;
+}
+#container > div{
+    border: 1.5px solid rgb(228, 221, 210);
+    padding: 4px;
+}
+#desc{
+    padding: 1px 0;
+    width: 85%;
+    text-align: justify;
+    word-spacing: 2px;
+}
+#currentTime{
+    grid-area: 1/1/2/2;
+}
+#totalTime{
+    grid-area: 1/2/2/3;
+}
+#buttons{
+    grid-area: 1/3/2/5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#timeListBlock{
+    grid-area: 2/1/5/4;
+    max-height: 420px;
+    overflow-y: auto;
+}
+#bestTime{
+    grid-area: 2/4/5/5;
+}
+#bestRecordedTime{
+    color: rgb(167, 146, 27);
+    text-shadow: 2px 2px 1px black;
+    font-size: 30px;
+}
+
+/* STRUCTURE OF THE BUTTONS COMMITING VARIOUS PROCESSES */
+button{
+    color: rgb(32, 41, 41);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(228, 221, 210);
+    border: 2px solid rgb(32, 41, 41);
+    box-shadow: 4px 4px 6px rgba(32, 41, 41, 0.3);
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+}
+button:hover{
+    color: rgb(55, 219, 219);
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(55, 219, 219);
+}
+
+/* STRUCTURE OF LISTS */
+ol{
+    list-style-position: inside;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-auto-flow: column;
+    padding: 0;
+}
+ol > li{
+    text-align: left;
+    margin: 5px 8px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(32, 41, 41);
+    box-shadow: 4px 4px 6px rgba(32, 41, 41, 0.3);
+    color: rgb(32, 41, 41);
+    text-shadow: 1px 1px 1px black;
+}
+ul{
+    list-style-position: inside;
+    color: rgb(228, 221, 210);
+}
+
+/* STRUCTURE OF ALL OF TEXT INSIDE THE CONTAINERS */
+h1, h4{
+    color: rgb(228, 221, 210);
+    text-shadow: 2px 2px 1px black;
+}
+h3{
+    font-style: italic;
+}
+h4{
+    text-align: center;
+    letter-spacing: 1.25px;
+}
+p{
+    font-weight: 400;
+    color: rgb(228, 221, 210);
+}
+#error, #warning{
+    color: red;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+}
+#warning{
+    text-align: center;
+}
+.tool{
+    color: rgb(55, 219, 219);
+}
